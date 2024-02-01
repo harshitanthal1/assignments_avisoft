@@ -1,0 +1,16 @@
+
+#header {
+    background-color: skyblue;
+    display: flex;
+    color: white;
+    padding-left: 50%;
+    height: 100px;
+}
+
+#footer {
+    background-color: orange;
+    display: flex;
+    color: white;
+    padding-left: 50%;
+    height: 100px;
+}

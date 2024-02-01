@@ -1,0 +1,8 @@
+
+#header {
+    background-color: skyblue;
+    display: flex;
+    color: white;
+    text-align: center;
+    height: 100px;
+}

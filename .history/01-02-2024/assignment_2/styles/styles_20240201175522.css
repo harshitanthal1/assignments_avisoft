@@ -1,0 +1,27 @@
+#main-sec {
+    display: flex;
+    width: 700px;
+    height: 1000px;
+    
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+#header {
+    background-color: skyblue;
+    width: 700px;
+    height: 70px;
+
+}
+
+#sec1 {
+    background-color: violet;
+}
+
+#footer {
+    background-color: orange;
+    width: 700px;
+    height: 70px;
+
+}

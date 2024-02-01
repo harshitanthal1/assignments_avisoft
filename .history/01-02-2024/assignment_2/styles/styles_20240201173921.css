@@ -1,0 +1,10 @@
+#main-sec {
+    display: flex;
+    width: 600px;
+}
+
+#header {
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+}

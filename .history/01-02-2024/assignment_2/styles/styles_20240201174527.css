@@ -1,0 +1,13 @@
+#main-sec {
+    display: flex;
+    width: 700px;
+    height: 1000px;
+}
+
+#header {
+    background-color: skyblue;
+    color: white;
+    width: 700px;
+    height: 100px;
+
+}

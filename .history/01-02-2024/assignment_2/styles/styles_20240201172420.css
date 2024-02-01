@@ -1,0 +1,59 @@
+
+#header {
+    background-color: skyblue;
+    display: flex;
+    color: white;
+    padding-left: 50%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+#box1 {
+    background-color: violet;
+    width: 45%;
+    height: 350px;
+    margin-right: 1%;
+}
+
+#box2 {
+    background-color: yellow;
+    width: 54%;
+    height: 500px;
+}
+
+#box3 {
+    background-color: darkgreen;
+    width: 45%;
+    height: 350px;
+    margin-right: 1%;
+    padding-top: 200px;
+}
+
+#box4 {
+    background-color: darkgreen;
+}
+
+#box5 {
+    background-color: darkgreen;
+}
+
+#box6 {
+    background-color: darkgreen;
+}
+
+#footer {
+    background-color: orange;
+    display: flex;
+    color: white;
+    padding-left: 50%;
+    height: 100px;
+    margin-top: 10px;
+    align-content: flex-end;
+}
