@@ -5,7 +5,7 @@ function calc(choice){
     console.log("3. Multiply");
     console.log("4. Divide");
     console.log("5. modulo");
-    choice = parseInt(prompt("Enter your choice (1-5):"));
+    choice = parseInt(prompt("Look at the console and Make your choice (1-5):"));
     return choice;
 }
 
