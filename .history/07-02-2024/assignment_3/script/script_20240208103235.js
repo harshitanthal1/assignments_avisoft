@@ -14,13 +14,11 @@ function playGame() {
 
         if (guess < random_number) {
             alert("Too low! Try again.");
-            scores.push(guess);
         } else if (guess > random_number) {
             alert("Too high! Try again.");
-            scores.push(guess);
         } else {
             alert(`Congratulations! You guessed the number ${random_number} in ${attempts} attempts.`);
-            scores.push(guess);
+            scores.push(attempts);
             break;
         }
     }
