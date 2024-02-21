@@ -1,1 +1,0 @@
-let p = parseFloat(prompt("Enter the Principle Interest value: "))
