@@ -17,13 +17,12 @@ app.use('/users', userRoutes);
 app.use('/auth', authRoutes);
 
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
-  .then(() => {
+.then(() => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`);
+        console.log(`Server is running on port ${PORT}`);
     });
-  })
-  .catch((err) => {
+})
+.catch((err) => {
     console.error('MongoDB connection error:', err);
-  });
+});
