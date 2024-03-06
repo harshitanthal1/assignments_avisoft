@@ -44,7 +44,6 @@ const insertBatch = () => {
 const performAggregations = () => {
   countMoviesByGenre();
   findAverageDuration();
-  findTopDirectors();
 };
 
 const countMoviesByGenre = () => {
@@ -64,20 +63,6 @@ const findAverageDuration = () => {
     })
     .catch((err) => {
       console.error('Error finding average duration:', err);
-    });
-};
-
-const findTopDirectors = () => {
-  Movie.aggregate([
-    { $group: { _id: '$director', count: { $sum: 1 } } },
-    { $sort: { count: -1 } },
-    { $limit: 5 },
-  ])
-    .then((results) => {
-      console.log('Top directors by movie count:', results);
-    })
-    .catch((err) => {
-      console.error('Error finding top directors:', err);
     });
 };
 
