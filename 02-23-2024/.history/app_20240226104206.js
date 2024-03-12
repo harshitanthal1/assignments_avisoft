@@ -4,11 +4,9 @@ const fs = require('fs').promises;
 const app = express();
 const PORT = 3000;
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
-// Routes
-app.get('/api/data', async (req, res) => {
+app.get('/api', async (req, res) => {
     try {
         const data = await fs.readFile('data.json', 'utf8');
         res.json(JSON.parse(data));
@@ -37,7 +35,7 @@ app.post('/api/data', async (req, res) => {
         const data = await fs.readFile('data.json', 'utf8');
         const records = JSON.parse(data);
         const newRecord = req.body;
-        newRecord.id = Date.now(); // Generate a unique ID
+        newRecord.id = Date.now(); 
         records.push(newRecord);
         await fs.writeFile('data.json', JSON.stringify(records, null, 2));
         res.status(201).json(newRecord);
@@ -81,7 +79,6 @@ app.delete('/api/data/:id', async (req, res) => {
     }
 });
 
-// Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
